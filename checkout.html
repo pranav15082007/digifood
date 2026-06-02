@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DigiFood Checkout</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="checkout-container">
+
+        <div class="checkout-box">
+
+            <h1>Checkout</h1>
+
+            <input
+                type="text"
+                id="customer-name"
+                placeholder="Enter Your Name"
+            >
+
+            <input
+                type="text"
+                id="customer-address"
+                placeholder="Enter Delivery Address"
+            >
+
+            <input
+                type="text"
+                id="customer-phone"
+                placeholder="Enter Phone Number"
+            >
+
+            <div class="checkout-total">
+
+                Total: ₹<span id="checkout-total-price">
+                    0
+                </span>
+
+            </div>
+
+            <button id="place-order-btn">
+
+                Place Order
+
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="checkout.js"></script>
+
+</body>
+</html>
