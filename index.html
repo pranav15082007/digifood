@@ -14,132 +14,186 @@
 </head>
 <body>
 
+<!-- NAVBAR -->
+
 <nav class="navbar">
 
     <div class="logo">
         DigiFood
     </div>
 
-    <ul class="nav-links">
+    <div class="nav-icons">
 
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
-        <li><a href="#">Offers</a></li>
-        <li><a href="#">Contact</a></li>
-        <li><a href="profile.html">Profile</a></li>
+        <a href="orders.html">
+            <i class="fa-solid fa-bag-shopping"></i>
+        </a>
 
-    </ul>
-    <div class="theme-toggle">
+        <a href="profile.html">
+            <i class="fa-solid fa-user"></i>
+        </a>
 
-    <i class="fa-solid fa-moon"></i>
+        <div class="theme-toggle">
+            <i class="fa-solid fa-moon"></i>
+        </div>
 
-    </div>
-    <div class="cart">
+        <div class="cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span id="cart-count">0</span>
+        </div>
 
-    <i class="fa-solid fa-cart-shopping"></i>
-
-    <span id="cart-count">
-        0
-    </span>
-
-</div>
-
-    <div class="menu-icon">
-        <i class="fa-solid fa-bars"></i>
     </div>
 
 </nav>
 
-    <!-- HERO SECTION -->
+<!-- HERO SECTION -->
 
-    <section class="hero">
+<section class="hero">
 
-        <div class="hero-content">
+    <div class="hero-left">
 
-            <h1>
-                Delicious Food Delivered To Your Doorstep
-            </h1>
+        <h1>
+            Delicious Food <br>
+            Delivered Fast 🚀
+        </h1>
 
-            <p>
-                Fast delivery • Fresh food • Best offers
-            </p>
+        <p>
+            Order your favorite meals anytime,
+            anywhere with DigiFood.
+        </p>
+
+        <div class="hero-buttons">
 
             <button class="hero-btn">
-                Explore Menu
+                Order Now
+            </button>
+
+            <button class="hero-btn secondary-btn">
+                View Menu
             </button>
 
         </div>
 
-    </section>
+    </div>
 
-    <!-- FOOD SECTION -->
+    <div class="hero-right">
 
-    <section class="food-section">
+        <img
+        src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1200"
+        alt="Pizza">
 
-        <h2>Popular Foods</h2>
+    </div>
 
-        <div class="food-container">
+</section>
 
-            <div class="food-card">
+<!-- FOOD SECTION -->
 
-                <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000" alt="Burger">
+<section class="food-section">
 
-                <div class="food-top">
+    <h2>Popular Foods</h2>
 
-    <h3>Burger</h3>
+    <div class="food-container">
 
-    <i class="fa-regular fa-heart favorite-icon"></i>
+        <!-- BURGER -->
 
-</div>
+        <div class="food-card">
 
-                <div class="rating">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000" alt="Burger">
 
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-star-half-stroke"></i>
+            <div class="food-top">
 
-    <span>
-        4.0 (120 reviews)
-    </span>
+                <h3>Burger</h3>
 
-</div>
-
-<p>₹199</p>
-
-                <button>Add to Cart</button>
+                <i class="fa-regular fa-heart favorite-icon"></i>
 
             </div>
 
-            <div class="food-card">
+            <div class="rating">
 
-                <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?q=80&w=1000" alt="Pizza">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
 
-                <h3>Pizza</h3>
-
-                <p>₹299</p>
-
-                <button>Add to Cart</button>
-
-            </div>
-
-            <div class="food-card">
-
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000" alt="Pizza">
-
-                <h3>Cheese Pizza</h3>
-
-                <p>₹349</p>
-
-                <button>Add to Cart</button>
+                <span>4.5 (120 reviews)</span>
 
             </div>
+
+            <p>₹199</p>
+
+            <button>Add to Cart</button>
 
         </div>
 
-    </section>
-    <!-- CART SIDEBAR -->
+        <!-- PIZZA -->
+
+        <div class="food-card">
+
+            <img src="https://images.unsplash.com/photo-1601924582970-9238bcb495d9?q=80&w=1000" alt="Pizza">
+
+            <div class="food-top">
+
+                <h3>Pizza</h3>
+
+                <i class="fa-regular fa-heart favorite-icon"></i>
+
+            </div>
+
+            <div class="rating">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+
+                <span>4.7 (240 reviews)</span>
+
+            </div>
+
+            <p>₹299</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+        <!-- CHEESE PIZZA -->
+
+        <div class="food-card">
+
+            <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?q=80&w=1000" alt="Cheese Pizza">
+
+            <div class="food-top">
+
+                <h3>Cheese Pizza</h3>
+
+                <i class="fa-regular fa-heart favorite-icon"></i>
+
+            </div>
+
+            <div class="rating">
+
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+
+                <span>4.9 (500 reviews)</span>
+
+            </div>
+
+            <p>₹349</p>
+
+            <button>Add to Cart</button>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CART SIDEBAR -->
 
 <div class="cart-sidebar">
 
@@ -153,23 +207,23 @@
 
     </div>
 
-    <div class="cart-items">
+    <div class="cart-items"></div>
+
+    <div class="cart-footer">
+
+        <h3>
+            Total: ₹<span id="total-price">0</span>
+        </h3>
+
+        <button id="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
 
 </div>
 
-<div class="cart-footer">
-
-    <h3>
-        Total: ₹<span id="total-price">0</span>
-    </h3>
-    <button id="checkout-btn">
-    Checkout
-</button>
-
-</div>
-
-</div>
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
